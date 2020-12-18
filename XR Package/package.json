@@ -1,0 +1,26 @@
+{
+  "name": "com.unity.testmanagesubsystem",
+  "version": "1.0.1",
+  "displayName": "ManagedSubsystemTest",
+  "description": "This is an test package",
+  "unity": "2020.1",
+  "dependencies": {
+    "com.unity.xr.arfoundation": "4.1.1",
+    "com.unity.xr.arsubsystems": "4.1.1",
+    "com.unity.xr.management": "3.2.16"
+  },
+  "keywords": [
+    "arfoundation",
+    "ar foundation",
+    "ar",
+    "augmented",
+    "xr",
+    "reality"
+  ],
+  "type": "tool",
+  "author": {
+    "name": "Frank van Hoof",
+    "email": "frank_van_hoof@hotmail.com",
+    "url": "https://vanhoof.dev"
+  }
+}

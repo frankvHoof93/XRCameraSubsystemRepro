@@ -1,0 +1,20 @@
+{
+    "name": "ManagedSubsystemTest.Editor",
+    "references": [
+        "GUID:e40ba710768534012815d3193fa296cb",
+        "GUID:f9fe0089ec81f4079af78eb2287a6163",
+        "GUID:92703082f92b41ba80f0d6912de66115",
+        "GUID:89952f6106be1664c96a69bc2e29a24a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
