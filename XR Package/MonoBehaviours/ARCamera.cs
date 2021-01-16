@@ -21,8 +21,8 @@ public class ARCamera : MonoBehaviour
 
     private void RegisterCamera()
     {
-        XRCameraSubsystem subsystem = XRGeneralSettings.Instance.Manager.activeLoader.GetLoadedSubsystem<XRCameraSubsystem>();
-        (subsystem as ManagedCameraSubsystem).RegisterCamera(this);
+        ManagedCameraSubsystem subsystem = XRGeneralSettings.Instance.Manager.activeLoader.GetLoadedSubsystem<XRCameraSubsystem>() as ManagedCameraSubsystem;
+        subsystem.RegisterCamera(this);
     }
 
     void Start()

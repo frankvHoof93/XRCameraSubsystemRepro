@@ -8,7 +8,12 @@ public class ManagedCameraSubsystem : XRCameraSubsystem
     private static readonly XRCameraSubsystemCinfo DEFAULT_INFO = new XRCameraSubsystemCinfo()
     {
         id = nameof(ManagedCameraSubsystem),
+#if UNITY_2020_2_OR_NEWER
+        providerType = typeof(CameraProvider),
+        subsystemTypeOverride = typeof(ManagedCameraSubsystem),
+#else
         implementationType = typeof(ManagedCameraSubsystem),
+#endif
         supportsAverageBrightness = false,
         supportsAverageColorTemperature = true,
         supportsColorCorrection = false,
@@ -26,12 +31,12 @@ public class ManagedCameraSubsystem : XRCameraSubsystem
     {
         Register(DEFAULT_INFO);
     }
-
+#if !UNITY_2020_2_OR_NEWER
     protected override Provider CreateProvider()
     {
         return new CameraProvider();
     }
-
+#endif
     public void RegisterCamera(ARCamera cam)
     {
         CameraProvider prov = (CameraProvider)provider;
